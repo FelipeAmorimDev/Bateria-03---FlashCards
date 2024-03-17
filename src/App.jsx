@@ -52,6 +52,7 @@ export function App() {
             key={card.id}
             className="card"
             onClick={() => handleCardClick(card.id)}
+            style={showCardID === card.id ? {backgroundColor: 'lightblue', color: "#323232"} : {}}
           >
             {showCardID === card.id ? card.answer : card.question}
           </div>
